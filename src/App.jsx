@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Card from "./components/card";
 
 import "./App.css";
 
@@ -23,12 +24,16 @@ function App() {
   };
   return (
     <>
-      <h1>Counter App</h1>
+      <h1 className=" text-3xl font-bold">Counter App</h1>
 
       <h2>Counter :{counter}</h2>
-      <button onClick={addValue}>Add</button>
+      <button className="rounded-xl bg-slate-500 my-3" onClick={addValue}>
+        Add
+      </button>
       <br />
-      <button onClick={decreaseValue}>Decrease</button>
+      <button className="rounded-xl bg-slate-500 " onClick={decreaseValue}>
+        Decrease
+      </button>
     </>
   );
 }
